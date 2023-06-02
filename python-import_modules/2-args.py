@@ -9,8 +9,8 @@ if argc == 0:
 elif argc == 1:
     print(argc, " argument:")
     for i, arg in enumerate(args, start=1):
-        print(i, ":", arg)
+        print(f"{i}: {arg}")
 else:
     print(argc, " arguments:")
     for i, arg in enumerate(args, start=1):
-        print(i, ":", arg)
+        print(f"{i}: {arg}")
