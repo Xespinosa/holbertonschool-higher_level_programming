@@ -4,5 +4,5 @@ if __name__ == "__main__":
     i = 0
     k = 0
     x = int(sys.argv[1:])
-    for i, arg in enumerate(x, start=1):
-        k += arg
+    i = [int (k) for k, in enumerate(x, start=1)]
+        
