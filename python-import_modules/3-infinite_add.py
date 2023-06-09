@@ -1,8 +1,12 @@
 #!/usr/bin/python3
+
+import sys
+
 if __name__ == "__main__":
-    import sys
-    i = 0
-    k = 0
-    x = int(sys.argv[1:])
-    i = [int (k) for k, in enumerate(x, start=1)]
-        
+
+    args = sys.argv[1:]
+    num = []
+    for i in args:
+        num.append(int(i))
+    total = sum(num)
+    print(total, end="\n")
