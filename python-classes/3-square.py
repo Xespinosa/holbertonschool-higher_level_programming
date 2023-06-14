@@ -1,11 +1,19 @@
 #!/usr/bin/python3
-"""This module creates and manipulates a square"""
+"""
+This module creates and manipulates a square
+"""
 
 
 class square:
-    """create the square"""
+    """
+    create the square
+    """
 
     def __init__(self, size=0):
+        """
+        define the size of the square
+        """
+
         if size < 0:
             raise ValueError("size must be >= 0")
         try:
@@ -13,7 +21,9 @@ class square:
         except TypeError:
             print("size must be an integer")
 
-        """define the size of the square"""
     def area(self):
+        """
+        define and return the area of a square
+        """
+
         return (self.__size ** 2)
-    """define and return the area of a square"""
