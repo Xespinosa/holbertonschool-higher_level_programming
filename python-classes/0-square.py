@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 """
-creating an empty square
+This module defines a class 'Square'.
 """
 
 
 class square:
     """
-    pass because we don't want the program to do anything
+    A class that defines a square with a private instance attribute 'size',
+    and methods for getting and setting the 'size' value, and for calculating
+    the area of the square.
     """
     pass
