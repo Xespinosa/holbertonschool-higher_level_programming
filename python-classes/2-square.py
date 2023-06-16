@@ -4,21 +4,17 @@ This module defines a class 'Square'.
 """
 
 
-class square:
+class Square:
     """
-    A class that defines a square with a private instance attribute 'size',
-    and methods for getting and setting the 'size' value, and for calculating
-    the area of the square.
+    A class that defines a square with a private instance attribute 'size'.
     """
 
     def __init__(self, size=0):
         """
         Initializes a new instance of Square with 'size' as an attribute.
         """
-
-        if size < 0:
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        elif size < 0:
             raise ValueError("size must be >= 0")
-        try:
-            self.__size = size
-        except TypeError:
-            print("size must be an integer")
+        self.__size = size

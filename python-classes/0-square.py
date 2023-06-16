@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 """
-This module defines a class 'Square'.
+This module contains the definition of an empty class 'Square'.
 """
 
 
-class square:
+class Square:
     """
-    A class that defines a square with a private instance attribute 'size',
-    and methods for getting and setting the 'size' value, and for calculating
-    the area of the square.
+    An empty class that defines a square.
     """
     pass
