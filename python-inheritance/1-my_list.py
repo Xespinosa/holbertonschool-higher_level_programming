@@ -4,10 +4,7 @@
 
 
 class Mylist(list):
-    """Public instance method
-
-    Args:
-        list (list): list of elements type int
+    """Public instance method called Mylist
     """
     def print_sorted(self):
         """prints the list, but sorted (ascending sort)
