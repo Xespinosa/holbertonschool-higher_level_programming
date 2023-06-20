@@ -1,8 +1,4 @@
 >>> MyList = __import__('1-my_list').Mylist
->>> my_list = Mylist()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'Mylist' is not defined
 >>> my_list = MyList()
 >>> my_list.append(1)
 >>> my_list.append(2)
