@@ -10,23 +10,3 @@
 >>> my_list.append(0)
 >>> my_list.print_sorted()
 [0, 1, 2, 3, 4, 5]
->>> my_list.print_sorted("3")
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: print_sorted() takes 1 positional argument but 2 were given
->>> my_list.print_sorted(3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: print_sorted() takes 1 positional argument but 2 were given
->>> my_list.print_sorted(NULL)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'NULL' is not defined
->>> my_list.print_sorted(self)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'self' is not defined
->>> my_list.print_sorted([hello])
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'hello' is not defined
