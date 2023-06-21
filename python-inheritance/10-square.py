@@ -86,4 +86,4 @@ class square(Rectangle):
             int: integer value of the area
         """
 
-        return self._size ** self._size
+        return self._size * self._size
