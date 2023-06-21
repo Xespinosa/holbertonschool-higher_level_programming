@@ -62,7 +62,7 @@ class Rectangle(BaseGeometry):
         return f"[Rectangle] {self._width}/{self._height}"
 
 
-class square(Rectangle):
+class Square(Rectangle):
     """a class Square that inherits from Rectangle
 
     Args:
@@ -78,6 +78,7 @@ class square(Rectangle):
 
         super().integer_validator("size", size)
         self._size = size
+        super().__init__(size, size)
 
     def area(self):
         """area of the square
@@ -86,4 +87,4 @@ class square(Rectangle):
             int: integer value of the area
         """
 
-        return self._size * self._size
+        return self._size ** 2
