@@ -25,10 +25,20 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
+    """a class Rectangle that inherits from BaseGeometry
+
+    Args:
+        BaseGeometry (class): parent class
+    """
 
     def __init__(self, width, height):
+        """initialization method
+
+        Args:
+            width (int): width of the rectangle
+            height (int): height of the rectangle
+        """
         super().integer_validator("width", width)
         super().integer_validator("height", height)
         self._width = width
         self._height = height
-        
