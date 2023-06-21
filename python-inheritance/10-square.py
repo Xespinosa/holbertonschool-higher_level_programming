@@ -44,17 +44,46 @@ class Rectangle(BaseGeometry):
         self._height = height
 
     def area(self):
+        """area of the rectangle
+
+        Returns:
+            int: total area of the rectangle
+        """
+
         return self._height * self._width
 
     def __str__(self) -> str:
+        """string to print the width and height of the rectangle
+
+        Returns:
+            str: the height and width of the rectangle
+        """
+
         return f"[Rectangle] {self._width}/{self._height}"
-    
+
 
 class square(Rectangle):
+    """a class Square that inherits from Rectangle
+
+    Args:
+        Rectangle (class): parent class for square
+    """
 
     def __init__(self, size):
+        """initialization of size
+
+        Args:
+            size (int): size of one of the sides of the square
+        """
+
         super().integer_validator("size", size)
         self._size = size
-    
+
     def area(self):
+        """area of the square
+
+        Returns:
+            int: integer value of the area
+        """
+
         return self._size ** self._size
