@@ -99,7 +99,7 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        """_summary_
+        """method for the # display
         """
         for i in range(self.__y):
             print()
