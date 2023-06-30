@@ -87,6 +87,11 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
+        """_summary_
+
+        Returns:
+            _type_: _description_
+        """
         objs = []
         filename = cls.__name__ + ".csv"
         with open(filename, 'r', newline='') as f:
