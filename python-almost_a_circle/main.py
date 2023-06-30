@@ -46,3 +46,8 @@ if __name__ == "__main__":
 
     r1 = Rectangle(2, 2)
     r1.display()
+
+    s1 = Rectangle(10, 2, 1)
+    print(s1)
+    s1_dictionary = s1.to_dictionary()
+    print(s1_dictionary)
