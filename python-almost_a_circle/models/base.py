@@ -3,6 +3,7 @@
 """_summary_
 """
 import json
+import os
 
 
 class Base:
@@ -91,7 +92,7 @@ class Base:
         Return a list of instance
         """
         filename = cls.__name__ + '.json'
-        if path.exists(filename) is False:
+        if os.path.exists(filename) is False:
             return []
         with open(filename, 'r') as fd:
             attrs_dic = cls.from_json_string(fd.read())
